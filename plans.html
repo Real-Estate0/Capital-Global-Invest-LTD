@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Investment Plans - Capital Global Invest LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f4f8fc;
+      color: #333;
+    }
+    header {
+      background: #007e5e;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #007e5e;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .plan {
+      background: #f1f6fb;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 2px solid #d2e9f7;
+      transition: transform 0.2s;
+    }
+    .plan:hover {
+      transform: translateY(-5px);
+    }
+    .plan h3 {
+      color: #007e5e;
+      margin-bottom: 0.5rem;
+    }
+    .plan p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .btn {
+      margin-top: 1rem;
+      background: #007e5e;
+      color: #fff;
+      padding: 0.6rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #005f46;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Capital Global Invest LTD</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Choose or Upgrade Your Investment Plan</h2>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter Plan</h3>
+        <p>💰 $1,000 minimum</p>
+        <p>📈 15% ROI in 7 days</p>
+        <a href="upgradestarter.html" class="btn">Get Started</a>
+      </div>
+
+      <div class="plan">
+        <h3>Gold Plan</h3>
+        <p>💰 $5,000 minimum</p>
+        <p>📈 20% ROI in 10 days</p>
+        <a href="upgradeGold.html" class="btn">Upgrade Now</a>
+      </div>
+
+      <div class="plan">
+        <h3>VIP Plan</h3>
+        <p>💰 $20,000 minimum</p>
+        <p>📈 30% ROI in 15 days</p>
+        <a href="upgradeVip.html" class="btn">Go VIP</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Capital Global Invest LTD. All rights reserved.
+  </footer>
+
+</body>
+</html>

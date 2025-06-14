@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital Global Invest LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f4f8fc url('https://images.unsplash.com/photo-1556742400-b5e2b4b2f86e?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(255, 255, 255, 0.95);
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
+    }
+    .header-left img {
+      height: 60px;
+    }
+    .header-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .header-center h1 {
+      font-size: 2rem;
+      color: #007e5e;
+      margin: 0;
+    }
+    nav {
+      width: 100%;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #007e5e;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: #007e5e;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #005f46;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      animation: fadeUp 1.5s ease-in;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .section-img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+    .plans div, .steps div, .testimonials div {
+      background: #f1f6fb;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .ticker {
+      background: #e8f5e9;
+      padding: 1rem;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #007e5e;
+    }
+    .ticker span {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }
+    }
+    .badges img {
+      height: 50px;
+      margin-right: 1rem;
+    }
+    footer {
+      background: #f1f1f1;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    a.link {
+      color: #007e5e;
+      text-decoration: underline;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="./logo.png" alt="Logo">
+    </div>
+    <div class="header-center">
+      <h1>Capital Global Invest LTD</h1>
+    </div>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#plans">Plans</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Invest Smart, Grow Wealth</h2>
+    <p>Your trusted partner for high-return investment opportunities worldwide.</p>
+    <a href="register.html" class="btn">Join Us Now</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <img class="section-img" src="./about us.png" alt="About Us">
+    <p>Capital Global Invest LTD is a modern investment firm dedicated to delivering secure and profitable financial solutions. We empower individuals and businesses to grow their capital with ease and confidence through diversified plans and transparent operations.</p>
+  </section>
+
+  <section class="plans" id="plans">
+    <h2>Investment Plans</h2>
+    <img class="section-img" src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1000&q=80" alt="Plans">
+    <div><h3>Starter Plan</h3><p>$1,000 minimum | 15% ROI in 7 days</p></div>
+    <div><h3>Gold Plan</h3><p>$5,000 minimum | 20% ROI in 10 days</p></div>
+    <div><h3>VIP Plan</h3><p>$20,000 minimum | 30% ROI in 15 days</p></div>
+  </section>
+
+  <section class="steps">
+    <h2>How It Works</h2>
+    <img class="section-img" src="./how.avif" alt="How it works">
+    <div><strong>1.</strong> Register your account</div>
+    <div><strong>2.</strong> Fund your wallet or choose a plan</div>
+    <div><strong>3.</strong> Track your earnings daily</div>
+    <div><strong>4.</strong> Withdraw your profits securely</div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Investors Say</h2>
+    <img class="section-img" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1000&q=80" alt="Testimonials">
+    <div>“I doubled my savings within a month. Totally trustworthy!” – Mary A.</div>
+    <div>“Excellent support and transparent transactions.” – James K.</div>
+  </section>
+
+  <section class="ticker">
+    <span>✔ John invested $50,000 | ✔ Sarah withdrew $78,000 | ✔ New VIP investor joined | ✔ Live profits updated every minute...</span>
+  </section>
+
+  <section class="badges">
+    <h2>Our Certifications</h2>
+    <div>
+      <img src="./img 11.jpg" alt="SSL Certified">
+      <img src="./img22.jpg" alt="ISO Certified">
+      <img src="./img33.jpg" alt="Trustpilot Rating">
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <br>
+    <a href="register.html" class="btn">Register Now</a><br><br>
+    <p>Or <a href="contact.html" class="link">Contact Us</a> for more info</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Capital Global Invest LTD. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/12069479708" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
